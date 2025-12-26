@@ -2,23 +2,28 @@ package test.java.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import java.time.Duration;
 
 public class GoogleHomePage {
 
     WebDriver driver;
+    WebDriverWait wait;
 
     By searchBox = By.name("q");
 
     public GoogleHomePage(WebDriver driver) {
         this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    public void open() {
-        driver.get("https://www.google.com");
-    }
+    // public void open() {
+    //     driver.get("https://www.google.com");
+    // }
 
     public void search(String text) {
-        driver.findElement(searchBox).sendKeys(text);
-        driver.findElement(searchBox).submit();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(searchBox))
+            .sendKeys(text + "\n");
     }
 }
