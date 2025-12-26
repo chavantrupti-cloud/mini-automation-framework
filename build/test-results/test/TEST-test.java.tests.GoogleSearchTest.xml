@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.java.tests.GoogleSearchTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-12-26T12:59:14" hostname="INFOANE12" time="10.117">
+  <properties/>
+  <testcase name="verifyGoogleSearch" classname="test.java.tests.GoogleSearchTest" time="10.117"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Dec 26, 2025 6:29:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 26, 2025 6:29:14 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.147. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.20.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>
